@@ -8,7 +8,7 @@ from user import views as user_views
 
 urlpatterns = [
     # -------------------- UI TASK MANAGEMENT --------------------
-    
+    path('', ui_views.landing_page, name='management-home'),
     path('task/', ui_views.dashboard, name='Dashboard'),
     path('task/register/', ui_views.register, name='register'),
     path('task/login/', ui_views.user_login, name='login'),

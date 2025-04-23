@@ -14,6 +14,9 @@ from Management.Services.ServiceModels.TaskDataServices import TaskDataServices
 from ..Services.Services import *
 from django.core.exceptions import ValidationError
 
+def landing_page(request):
+    return render(request, 'landing.html')
+
 def dashboard(request):
     return render(request, 'Homepage.html')
 
